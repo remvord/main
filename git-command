@@ -1,0 +1,6 @@
+git clone https://github.com/remvord/hexlett.git
+git add *.java
+git status
+git commit -m "user input"
+git push origin master
+

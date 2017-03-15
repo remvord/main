@@ -1,0 +1,18 @@
+sudo apt-get install python3-venv
+mkdir main
+cd main/
+python3 -m venv myenv
+cd myenv/
+source myenv/bin/activate
+pip3 install Django
+django-admin startproject thesite .
+python manage.py migrate
+python manage.py runserver
+
+For osx users you can use 
+sudo lsof -t -i tcp:8000 | xargs kill -9
+netstat -ntlp
+kill -9 6599
+
+http://127.0.0.1:8000/
+
